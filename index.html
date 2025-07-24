@@ -5,9 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flowers Market</title>
     <link rel="stylesheet" href="./styles/flower.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <div class="nav-right">
+          <img src="./assets/logo.png" alt="website logo" />
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li><a class="home inter" href="">Home</a></li>
+            <li><a class="shop inter" href="">Shop</a></li>
+            <li><a class="about inter" href="">About Us</a></li>
+            <div class="cart-card">
+              <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #231f20;
+                      }
+                    </style>
+                  </defs>
+                  <g id="cart">
+                    <path
+                      class="cls-1"
+                      d="M29.46 10.14A2.94 2.94 0 0 0 27.1 9H10.22L8.76 6.35A2.67 2.67 0 0 0 6.41 5H3a1 1 0 0 0 0 2h3.41a.68.68 0 0 1 .6.31l1.65 3 .86 9.32a3.84 3.84 0 0 0 4 3.38h10.37a3.92 3.92 0 0 0 3.85-2.78l2.17-7.82a2.58 2.58 0 0 0-.45-2.27zM28 11.86l-2.17 7.83A1.93 1.93 0 0 1 23.89 21H13.48a1.89 1.89 0 0 1-2-1.56L10.73 11H27.1a1 1 0 0 1 .77.35.59.59 0 0 1 .13.51z"
+                    />
+                    <circle class="cls-1" cx="14" cy="26" r="2" />
+                    <circle class="cls-1" cx="24" cy="26" r="2" />
+                  </g>
+                </svg>
+              </div>
+              <li><a class="cart inter" href="">Cart($56)</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <section class="banner">
+        <div class="banner-left">
+          <h2>
+            <span class="black noto-serif">ALWAYS</span>
+            <span class="orange noto-serif">FRESH</span><br /><span
+              class="orange noto-serif"
+              >FLOWERS</span
+            >
+          </h2>
+          <h4 class="inter">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </h4>
+        </div>
+        <div class="banner-right">
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
