@@ -139,6 +139,7 @@ body .container {
   font-weight: 400;
   margin: 0 auto;
   padding-top: 20px;
+  color: #00000080;
 }
 .plant-card {
   width: 270px;
@@ -151,6 +152,15 @@ body .container {
   margin-bottom: -20px;
   margin-top: -20px;
 }
+.plant-card .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+.plant-card .price {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .plant-card-btn {
   font-size: 16px;
   font-weight: 600;
@@ -244,5 +254,66 @@ body .container {
   .banner-right img {
     width: 100%;
     height: fit-content;
+  }
+  /* plant */
+  .plant {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .plant-top {
+    width: 100%;
+    text-align: center;
+  }
+  .plant-top > h3 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .plant-top > h4 {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #00000080;
+  }
+  .plant-bottom {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: auto;
+    row-gap: 60px;
+    margin-top: 0 auto;
+    padding-left: 15px;
+
+    padding-right: 15px;
+    position: relative;
+    transform: translateX(20px);
+  }
+  .plant-card {
+    width: 165px;
+    height: auto;
+  }
+  .plant-card .name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .plant-card .price {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .plant-card img {
+    width: 165px;
+    height: 160px;
+  }
+  .plant-card-btn {
+    font-size: 14px;
+    font-weight: 600;
+    width: 165px;
+    height: 30px;
   }
 }
