@@ -181,6 +181,10 @@ body .container {
 /* plant lover styles */
 
 .plant-lover {
+  display: flex;
+  justify-content: space-between;
+}
+.plant-lover {
   width: 1140px;
   height: 600px;
   margin: 200px auto;
@@ -190,7 +194,7 @@ body .container {
   width: 50%;
 }
 .plant-lover-right {
-  padding-left: 60px;
+  padding-left: 50px;
 }
 .plant-lover-right .title {
   font-size: 50px;
@@ -199,7 +203,7 @@ body .container {
   padding-top: 40px;
 }
 .plant-lover-right .description ul li {
-  width: 100%;
+  width: 480px;
   font-size: 22px;
   font-weight: 400;
   color: #00000080;
@@ -219,14 +223,14 @@ body .container {
   width: 300px;
   height: 300px;
 }
-.plant-lover {
-  display: flex;
-  justify-content: space-between;
-}
 
 /* responsive styles for mobile devices*/
 
 @media screen and (max-width: 576px) {
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   /* navbar */
   .home,
   .shop,
@@ -328,18 +332,16 @@ body .container {
     color: #00000080;
   }
   .plant-bottom {
-    width: 100%;
+    width: 350px;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: auto;
+    column-gap: 0px;
     row-gap: 60px;
-    margin-top: 0 auto;
-    padding-left: 15px;
-
-    padding-right: 15px;
+    padding-left: -15px;
+    padding-right: -15px;
     position: relative;
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
   .plant-card {
     width: 165px;
@@ -362,5 +364,45 @@ body .container {
     font-weight: 600;
     width: 165px;
     height: 30px;
+  }
+
+  /* plant lover styles */
+  .plant-lover {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 300px;
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+  }
+  .plant-lover-left .primary img {
+    width: 340px;
+    margin-left: -10px;
+  }
+  .plant-lover-left .secondary img {
+    display: none;
+  }
+  .plant-lover-right {
+    /* border: 1px solid red; */
+    width: 340px;
+    margin-top: -320px;
+  }
+  .plant-lover-right .title {
+    width: 300px;
+    font-size: 25px;
+    margin-left: -55px;
+  }
+
+  .plant-lover-right .description ul li {
+    width: 300px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #00000080;
+    margin-left: 20px;
+  }
+  .plant-lover-right .description ul {
+    margin-left: -65px;
+    margin-bottom: 50px;
   }
 }
