@@ -5,11 +5,11 @@
   margin: 0;
 }
 body {
-  max-width: 100%;
+  /* max-width: 100%; */
   background-color: #f5f8ff;
 }
 body .container {
-  max-width: 1440px;
+  max-width: 80vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
@@ -122,6 +122,8 @@ body .container {
 /* Plants section */
 
 .plant {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .plant-top {
   max-width: 1140px;
@@ -143,14 +145,17 @@ body .container {
 }
 .plant-card {
   width: 270px;
-  height: 485px;
+  height: 460px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: -20px;
-  margin-top: -20px;
+  /* border: 2px solid blue; */
+}
+.plant-card img {
+  width: 265px;
+  height: 323px;
 }
 .plant-card .name {
   font-size: 22px;
@@ -164,18 +169,18 @@ body .container {
 .plant-card-btn {
   font-size: 16px;
   font-weight: 600;
-  width: 270px;
+  width: 265px;
   height: 50px;
 }
 
 .plant-bottom {
   width: 1140px;
-  height: auto;
-  margin: 0 auto 150px auto;
+  height: 948px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  margin-top: -40px;
+  gap: 20px;
+  /* border: 2px solid red; */
 }
 
 /* plant lover styles */
@@ -236,7 +241,7 @@ body .container {
   font-weight: 700;
 }
 .deal-top h5 {
-  margin: 20px auto;
+  margin: 0 auto;
   width: 850px;
   font-size: 22px;
   font-weight: 400;
@@ -245,7 +250,7 @@ body .container {
 .deal-bottom {
   width: 1140px;
   height: 427px;
-  margin: 80px auto 80px auto;
+  margin: 0 auto;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -368,6 +373,74 @@ body .container {
   position: relative;
   transform: translateX(328px);
 }
+/* feet styles */
+.feet {
+  /* border: 2px solid red; */
+  width: 1120px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.group-1 {
+  /* border: 2px solid blue; */
+  width: 360px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 20px;
+}
+.group-1 img {
+  width: 135px;
+  height: 82px;
+}
+.group-1 p {
+  width: 100%;
+  font-size: 22px;
+  color: #00000080;
+  padding-top: 10px;
+}
+.group-2 ul {
+  width: auto;
+  height: auto;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.group-3 ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  /* border: 2px solid blue; */
+}
+.group-2 ul li,
+.group-3 ul li {
+  list-style: none;
+}
+.group-2 ul li a,
+.group-3 ul li a {
+  text-decoration: none;
+  color: #6b7280;
+}
+.group-4 {
+  width: 220px;
+  height: auto;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
 
 /* responsive styles for mobile devices*/
 
@@ -482,66 +555,62 @@ body .container {
     color: #00000080;
   }
   .plant-bottom {
-    width: 350px;
+    width: 90vw;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0px;
-    row-gap: 60px;
-    padding-left: -15px;
-    padding-right: -15px;
+    gap: 20px;
     position: relative;
-    transform: translateX(10px);
+    transform: translateY(-50px);
   }
   .plant-card {
-    width: 165px;
+    width: 156px;
     height: auto;
   }
   .plant-card .name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
   }
   .plant-card .price {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
   }
   .plant-card img {
-    width: 165px;
-    height: 160px;
+    width: 152px;
+    height: auto;
   }
   .plant-card-btn {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    width: 165px;
+    width: 152px;
     height: 30px;
   }
 
   /* plant lover styles */
   .plant-lover {
-    max-width: 320px;
+    max-width: 90vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 300px;
-    margin: 0 auto;
+    gap: 20px;
     /* border: 2px solid blue; */
   }
   .plant-lover-left .primary img {
     width: 340px;
-    margin-left: -10px;
   }
   .plant-lover-left .secondary img {
     display: none;
   }
   .plant-lover-right {
     /* border: 1px solid red; */
-    width: 340px;
-    margin-top: -320px;
+    width: 100%;
+    margin: 0 auto;
+    transform: translate(-2 0px, 0);
   }
   .plant-lover-right .title {
     width: 300px;
     font-size: 25px;
-    margin-left: -55px;
   }
 
   .plant-lover-right .description ul li {
@@ -549,10 +618,8 @@ body .container {
     font-size: 22px;
     font-weight: 400;
     color: #00000080;
-    margin-left: 20px;
   }
   .plant-lover-right .description ul {
-    margin-left: -65px;
     margin-bottom: 50px;
   }
 
@@ -560,23 +627,25 @@ body .container {
 
   .deal {
     width: 350px;
-    margin: 450px 10px 100px 10px;
+    margin: 0 auto;
   }
-  .deal-top {
+  .deal-top > h3 {
     width: 350px;
-    margin: 0 10px 0 -4px;
+    transform: translateY(450px);
   }
   .deal-top > h5 {
-    width: 100%;
-    margin: 30px 0 -10px 0;
+    width: 350px;
+    transform: translate(-400px, 450px);
   }
   .deal-bottom {
     width: 350px;
-    margin: 70px auto 180px -5px;
-    height: 554px;
+    margin: 0 auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    transform: translateY(470px);
   }
 
   .deal-bottom-left .img-1 img {
@@ -584,6 +653,7 @@ body .container {
     height: 170px;
   }
   .deal-bottom-left .img-2 img {
+    border-radius: none;
     position: relative;
     transform: translate(0, -78px);
     width: 347px;
@@ -597,20 +667,14 @@ body .container {
   }
   .bloom-card {
     position: relative;
-    /* top: 3685px;
-    left: 85px; */
     transform: translate(70px, -140px);
   }
   .ana-card {
     position: relative;
-    /* top: 3875px;
-    left: 100px; */
     transform: translate(85px, -210px);
   }
   .zabo-card {
     position: relative;
-    /* top: 4060px;
-    left: 94px; */
     transform: translate(5px, -270px);
   }
   .bloom-card > .line-2,
@@ -628,11 +692,12 @@ body .container {
 
   .newsletter {
     width: 100vw;
-    margin-top: -50px;
+    margin: 0 auto;
     background-size: 240% 275px;
     background-repeat: no-repeat;
     background-position: -260px 0;
-    position: relative;
+    transform: translateY(290px);
+    /* position: relative; */
   }
 
   .newsletter .title {
@@ -663,5 +728,24 @@ body .container {
     font-size: 17px;
     position: relative;
     transform: translateX(-10px);
+  }
+  /* feet styles*/
+  .feet {
+    width: 90vw;
+    margin: 50px auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 16px;
+  }
+  .group-1 img {
+    width: 179px;
+    height: auto;
+  }
+  .group-1 p {
+    font-size: 16px;
   }
 }
